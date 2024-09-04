@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    place-items:center;
+    height: 100vh;
+    display: grid;
+    background-color: aquamarine;
+}
+.computer-guess span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: center;
+}
+.user-guess span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    align-items: center;
+}
+.container {
+    width: 400px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.user-guess, .computer-guess {
+    width: 100px;
+    display: inline-block;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    margin: 20px 20px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    
+
+}
+
+.number-button {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #c4caff;
+    
+}
+
+.enter-button {
+    grid-column: 3 / -1;
+    width: 140px;
+    height: 50px;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #333333;
+    color: #fff;
+}
+
+.number-button:hover, .enter-button:hover {
+    background-color: #555;
+}
+
